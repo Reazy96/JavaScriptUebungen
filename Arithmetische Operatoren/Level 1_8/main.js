@@ -41,3 +41,16 @@ console.log(a - b);
 let resultThree = a - b;
 
 console.log(resultOne & resultTwo);
+
+
+let x = 20;
+let y = 30;
+let z = 10;
+
+variante 1
+console.log((x * y) / z);
+
+variante 2
+console.log(x * y / z);
+
+let resultOne = (x * y) / z;
