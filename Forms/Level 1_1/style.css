@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main {
+  padding: 14vw 35vw;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.names input {
+  min-width: 49.59%;
+}
+
+form input,
+select {
+  height: 5rem;
+  font-size: 1.6rem;
+  padding-inline: 1rem;
+  border: 1px solid lightgray;
+}
+
+form span {
+  color: rgb(255, 0, 0);
+}
+
+form textarea {
+  padding: 2rem;
+  border: 1px solid lightgray;
+}
+
+form input[type="submit"] {
+  background: rgb(128, 151, 187);
+  color: white;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
