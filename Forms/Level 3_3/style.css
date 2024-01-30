@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 1px 1px 0px #000;
+}
+
+.rot {
+  background-color: red;
+}
+
+.gruen {
+  background-color: green;
+}
+
+.blau {
+  background-color: blue;
+}
