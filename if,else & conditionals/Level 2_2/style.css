@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 1px 1px 0px #000;
+  transition: 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
