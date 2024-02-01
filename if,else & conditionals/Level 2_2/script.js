@@ -15,7 +15,7 @@ function weatherRange() {
     backgroundclr.style.backgroundColor = "yellow";
     levelof1.innerHTML = "Level of health concern: Moderate";
     levelof2.innerHTML = "Level of health effect: Acceptable quality";
-  } else {
+  } else if (weatherStatus > 100 && weatherStatus <= 150) {
     showValue.innerHTML = weatherStatus;
     backgroundclr.style.backgroundColor = "orange";
     levelof1.innerHTML =
