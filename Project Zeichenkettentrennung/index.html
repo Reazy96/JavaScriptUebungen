@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Zeichenketten-Trennungsmaschine</h1>
+        <label for="input-txt">Zu Trennende Zeichenkette:</label>
+        <input type="text" id="input-txt" />
+        <label for="input-cut">Trennen bei Zeichenkette:</label>
+        <input type="text" id="input-cut" />
+        <div>
+          <input
+            type="radio"
+            id="cut-before"
+            checked
+            name="cutting"
+            value="before"
+          />
+          <label for="cut-before">davor trennen</label
+          ><input type="radio" id="cut-after" name="cutting" value="after" />
+          <label for="cut-after">danach trennen</label>
+          <input
+            type="button"
+            value="Hier Kicken"
+            onclick="stringCutMachine()"
+          />
+          <h6></h6>
+        </div>
+        <h2>Ausgabe</h2>
+
+        <h3>Vorderer Teil</h3>
+        <p class="vorderer-teil">✂️</p>
+
+        <h3>Hinterer Teil</h3>
+        <p class="hinterer-teil">✂️</p>
+      </form>
+
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>
