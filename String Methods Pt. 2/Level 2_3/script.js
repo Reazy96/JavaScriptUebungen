@@ -4,13 +4,14 @@ function marker() {
   console.log(input);
   console.log(searchWord);
 
-  //   dem input ein span mit der class gegeben
+  //    mit "replaceAll" suche ich mein input im Text und gebe ihn mit "innerHTML"
+  //                                                  ein span mit einer class
   const change = searchWord.replaceAll(
     input,
     (document.innerHTML = `<span class=highlight> ${input} </span>`)
   );
 
-  // dass der neue text mit styling übernommen wird
+  // hier sage ich dass der komplette Text mit Styling übernommen wird
 
   document.querySelector("article").innerHTML = change;
 }
