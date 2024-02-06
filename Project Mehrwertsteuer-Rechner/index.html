@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Mehrwertsteuer-Rechner</h1>
+      <form>
+        <!-- ! radios -->
+        <div class="wrapper-inside">
+          <h6>Was soll berechnet werden ?</h6>
+          <div class="input1">
+            <input
+              id="nettoZuBrutto"
+              type="radio"
+              value="nettoZuBrutto"
+              name="nettobrutto"
+              checked
+            />
+            <label for="nettoZuBrutto"
+              >Mehrwertsteur aufschlagen (Netto zu Brutto)</label
+            >
+          </div>
+          <div class="input2">
+            <input
+              id="bruttoZuNetto"
+              type="radio"
+              value="bruttoZuNetto"
+              name="nettobrutto"
+            />
+
+            <label for="bruttoZuNetto"
+              >Mehrwertsteur abziehen (Brutto zu Netto)</label
+            >
+          </div>
+        </div>
+
+        <div class="prozent wrapper-inside">
+          <h6>Mehrwertsteuersatz</h6>
+          <div class="radio1">
+            <input
+              type="radio"
+              id="satz19"
+              value="satz19"
+              name="prozentsatz"
+              checked
+            />
+            <label>19%</label>
+          </div>
+          <div class="radio2">
+            <input type="radio" id="satz7" value="satz7" name="prozentsatz" />
+            <label>7%</label>
+          </div>
+        </div>
+        <!-- ! Betrag -->
+
+        <div class="betrag wrapper-inside">
+          <label>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro*</label>
+          <input
+            type="number"
+            class="meinBetrag"
+            min="0"
+            step="0.01"
+            required
+          />
+        </div>
+        <!-- ! Button -->
+        <input type="button" value="Berechnen" onclick="steuerBerechnen()" />
+
+        <hr />
+        <h2>Ergebnis</h2>
+        <!-- ! Outputs -->
+        <div class="output wrapper-inside">
+          <h6>Mehrwertsteuerbetrag</h6>
+          <p class="outputmwst"><span>€</span></p>
+        </div>
+        <div class="output wrapper-inside">
+          <h6>Bruttobetrag (Endpreis)</h6>
+          <p class="endpreis"><span>€</span></p>
+        </div>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  min-height: 100vh;
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+  gap: 5px;
+  padding: 30px 30px;
+  margin: auto auto;
+  max-width: 30%;
+}
+.wrapper-inside {
+  background-color: lightgray;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+.input1,
+.input2 {
+  margin-top: 10px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.radio1,
+.radio2 {
+  margin-top: 10px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.betrag {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.betrag input {
+  border-radius: 10px;
+  border: none;
+  padding: 3px 10px;
+}
+
+input[type="button"] {
+  border-radius: 10px;
+  border: none;
+  padding-block: 10px;
+  background-color: lightblue;
+}
+hr {
+  margin-top: 10px;
+}
+h2 {
+  color: blue;
+  margin-block: 10px;
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
