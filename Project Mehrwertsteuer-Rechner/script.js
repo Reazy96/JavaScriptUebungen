@@ -22,3 +22,22 @@ const steuerBerechnen = () => {
   }
 };
 steuerBerechnen();
+
+// Funktion 2 :
+
+const nettoBruttotxt = document.querySelector(".betrag p");
+const nettoBruttotxt2 = document.querySelector(".output .outputJS");
+
+const changeTxt = () => {
+  let bruttoNetto = document.querySelector(
+    'input[name="nettobrutto"]:checked'
+  ).value;
+
+  nettoBruttotxt.innerHTML =
+    bruttoNetto == "nettoZuBrutto"
+      ? "Nettobetrag <br> (Preis ohne Mwst.) <br> in Euro*"
+      : "Bruttobetrag <br> (Preis inklusive Mwst.) <br> in Euro*";
+
+  nettoBruttotxt2.innerHTML =
+    bruttoNetto == "nettoZuBrutto" ? "Bruttobetrag (Endpreis)" : "Nettobetrag";
+};
