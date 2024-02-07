@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+main {
+  min-height: 100vh;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(164, 224, 204);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 11px 5px 15px 5px #000000;
+}
+.output-header {
+  display: flex;
+  gap: 40px;
+  margin-left: 120px;
+}
+.output-main {
+  display: flex;
+  gap: 30px;
+}
+
+.output-footer {
+  display: flex;
+  gap: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

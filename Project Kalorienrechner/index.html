@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Kalorienrechner</h1>
+
+        <label for="groesse">Körpergröße</label>
+        <input type="number" id="groesse" />
+        <label for="alter">Alter</label>
+        <input type="number" id="alter" />
+        <label for="gewicht">Gewicht</label>
+        <input type="number" id="gewicht" />
+
+        <div>
+          <input type="radio" id="frau" checked name="geschlecht" value="frau" />
+          <label for="frau">Weiblich</label> <input type="radio" id="mann" name="geschlecht" value="mann" /><label
+            for="mann"
+            >Männlich</label
+          >
+        </div>
+
+        <select id="pal-faktor" name="pal-faktor">
+          <option value="0.95">Schlafen</option>
+          <option value="1.2">Nur Sitzen oder Liegen</option>
+          <option value="1.5">Auschließlich sitzende Tätigkeit mit wenig/keiner körperlichen Aktivität</option>
+          <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit</option>
+          <option value="1.9">Überwiegend gehende, stehende Tätigkeit</option>
+          <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+        </select>
+
+        <input type="button" value="rechnen" onclick="kalorienrechner()" />
+
+        <section class="output-wrapper">
+          <div class="output-header">
+            <h6>kcal</h6>
+            <h6>kJ</h6>
+          </div>
+          <div class="output-main">
+            <h5>Grundumsatz</h5>
+            <p class="grund-kcal"></p>
+            <p class="grund-kj"></p>
+          </div>
+
+          <div class="output-footer">
+            <h5>Gesamtumsatz</h5>
+            <p class="gesamt-kcal"></p>
+            <p class="gesamt-kj"></p>
+          </div>
+        </section>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
