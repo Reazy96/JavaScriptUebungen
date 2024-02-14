@@ -11,3 +11,4 @@ removeBtn.addEventListener("click", (event) => {
   event.preventDefault();
   selectMenu.remove(putIndex);
 });
+
