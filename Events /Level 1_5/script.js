@@ -6,3 +6,5 @@ counterBtn.addEventListener("click", () => {
   counter++;
   counterBtn.innerHTML = "Click me: " + counter;
 });
+
+
