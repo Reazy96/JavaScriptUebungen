@@ -20,6 +20,11 @@
 //   divColor5.style.backgroundColor = "black";
 // });
 
+
+
+
+
+
 // let changeColor = (number) => {
 //   console.log(number);
 //   let cartColor = document.querySelector("div:nth-of-type(" + number + ")");
@@ -35,3 +40,5 @@ const changeColor = () => {
     });
   });
 };
+
+
