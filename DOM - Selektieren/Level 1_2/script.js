@@ -11,13 +11,27 @@
 //   //   htmlElemente[4].style.backgroundColor = "black";
 //   //   htmlElemente[4].style.color = "white";
 // };
-
+let clickCount = 0;
 const myFunction = () => {
+  clickCount++;
+
+  console.log(clickCount);
+
   let htmlElemente = document.getElementsByClassName("example");
 
-  for (let i = 0; i < htmlElemente.length; i++) {
-    htmlElemente[i].style.backgroundColor = "black";
-    console.log(htmlElemente[i]);
-    htmlElemente[4].style.color = "white";
+  if (clickCount % 2 === 0) {
+    for (let i = 0; i < htmlElemente.length; i++) {
+      htmlElemente[i].style.backgroundColor = "black";
+      htmlElemente[i].style.color = "white";
+
+      htmlElemente[4].style.color = "white";
+    }
+  } else if (clickCount % 2 !== 0) {
+    for (let i = 0; i < htmlElemente.length; i++) {
+      htmlElemente[i].style.backgroundColor = "white";
+      htmlElemente[i].style.color = "black";
+
+      htmlElemente[4].style.color = "black";
+    }
   }
 };
