@@ -52,26 +52,26 @@ const singers = [
 let myDiv = document.querySelector("#table-container");
 
 singers.forEach((singleSinger) => {
-  myDiv.innerHTML += `<table> 
+  myDiv.innerHTML += `<tbody>
+      <tr>
+        <td>${singleSinger.name}</td>
+        <td>${singleSinger.country}</td>
+        <td>
+          ${singleSinger.period_active.start} - ${singleSinger.period_active.end}
+        </td>
+        <td>${singleSinger.genre}</td>
+      </tr>
+    </tbody>`;
+});
+
+myDiv.innerHTML = `<table> 
   <thead>
   <tr>
     <th>Name</th>
     <th>Country</th>
     <th>Start-End</th>
     <th>Genre</th>
-  
   </tr>
   </thead>
-  <tbody>
-  <tr>
-  <td>${singleSinger.name}</td>
-  <td>${singleSinger.country}</td>
-  <td>${singleSinger.period_active.start} - ${singleSinger.period_active.end} </td>
-  <td>${singleSinger.genre}</td> 
-  </tr>
-  </tbody>
-
-  
+  ${myDiv.innerHTML}
   </table>`;
-  console.log(singleSinger.period_active.start);
-});
