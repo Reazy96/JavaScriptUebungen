@@ -19,3 +19,6 @@ const date1 = new Date();
 date1.setDate(date.getDate() + 30);
 
 output.innerHTML += ` 30 Tage auf das aktuelle Datum drauf:<br>${date1} <br>`;
+
+
+
