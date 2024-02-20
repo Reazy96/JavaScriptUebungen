@@ -8,5 +8,7 @@ let countdown = setInterval(() => {
     clearInterval(countdown);
   } else if (number === 0) {
     document.body.children[0].style.opacity = "0";
+
+    window.open("https://www.google.de/?hl=de", "_self");
   }
 }, 1000);
