@@ -1,13 +1,12 @@
-let divNumber = document.querySelector(".zeit");
-let funcBtn = document.querySelector("#btn");
-let start = 100;
+const counter = document.querySelector("#count");
+let number = 10;
 
-funcBtn.addEventListener("click", () => {
-  let counter = setInterval(() => {
-    divNumber.innerHTML = `${start--}%`;
+let countdown = setInterval(() => {
+  counter.innerHTML = `${number--}`;
 
-    if (start < 0) {
-      clearInterval(counter);
-    }
-  }, 200);
-});
+  if (number < 0) {
+    clearInterval(countdown);
+  } else if (number === 0) {
+    document.body.children[0].style.opacity = "0";
+  }
+}, 1000);
